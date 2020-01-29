@@ -1,0 +1,7 @@
+<!-- Provided by /03-components/full-width-image/full-width-image.twig -->
+<div class="full_width_image {{ item.image.fwi_custom_classes }}">
+  {{ item.image.fwi_constrain ? '<div class="l-constrain">' : ''}}
+  <div class="full-width-image__image" style="background-image: url('{{ item.image.fwi_image }}')"></div>
+  <div class="full_width_image__caption">{{ item.image.fwi_caption }}</div>
+  {{ item.image.fwi_constrain ? '</div>' : ''}}
+</div>

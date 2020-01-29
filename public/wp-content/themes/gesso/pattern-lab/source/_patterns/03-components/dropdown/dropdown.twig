@@ -1,0 +1,35 @@
+<!-- Provided by /03-components/dropdown/dropdown.twig -->
+<div class="dropdown {{ custom_classes }} {{ subcomponent ? 'subcomponent' : '' }} ">
+  <div class="dropdown__inner">
+    {% if item.dropdown.dropdown_title %}
+      <h3 class="dropdown__title">
+        {{ item.dropdown.dropdown_title }}
+      </h3>
+    {% endif %}
+
+    {% if item.dropdown.dropdown_content %}
+      <div class="dropdown__content">
+        {{ item.dropdown.dropdown_content }}
+      </div>
+    {% endif %}
+
+    <div class="dropdown__button">
+      {% if item.dropdown.dropdown_button %}
+        <button class="button button--dropdown">
+          {{ item.dropdown.dropdown_button }}
+        </button>
+      {% endif %}
+
+      {% if item.dropdown.dropdown_menu %}
+        <div class="dropdown__menu">
+          {% for item in item.dropdown.dropdown_menu %}
+            <a href="{{ item.link.url }}" target="{{ item.link.target }}" class="dropdown__link">
+              {{ item.link.title }}
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+</div>

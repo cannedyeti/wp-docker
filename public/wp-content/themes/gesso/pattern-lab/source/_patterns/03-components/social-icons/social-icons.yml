@@ -1,0 +1,10 @@
+options:
+  global_footer_social:
+    title: 'Share'
+    links:
+      one: 
+        social_url: 'www.facebook.com'
+        social_network: 'facebook'
+      two:
+        social_url: 'www.twitter.com'
+        social_network: 'twitter'

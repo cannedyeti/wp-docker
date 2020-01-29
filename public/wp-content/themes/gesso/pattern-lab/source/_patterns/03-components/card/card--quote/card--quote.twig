@@ -1,0 +1,23 @@
+<!-- Provided by /03-components/card/card--quote.twig  -->
+<div class="card{{ card_type ? " card--#{card_type}"}}"
+{{ card_bg_image ? "style=\"background-image:url(#{card_image});\""|raw }}>
+
+  {% if card_title %}
+    <h3 class="card__title">
+        {{ card_title }}
+    </h3>
+  {% endif %}
+
+  {% if card_content %}
+    <div class="card__content">
+        {{ card_content|raw }}
+    </div>
+  {% endif %}
+
+  {% if card_author %}
+    <div class="card__author">
+      <span>--</span>
+        {{ card_author|raw }}
+    </div>
+  {% endif %}
+</div>

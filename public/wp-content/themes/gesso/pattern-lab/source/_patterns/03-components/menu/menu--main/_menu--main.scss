@@ -1,0 +1,59 @@
+// @file
+// Styles for the main menu.
+
+.menu--main {
+  @include list-inline;
+  height: 100%;
+  display: flex;
+  .menu__item {
+    padding: 1.75rem .75rem;
+    display: inline-block;
+    font-size: $font-size-md;
+    letter-spacing: .5px;
+    position: relative;
+    &:hover {
+      background-color: get-color(black, 2);
+      color: get-color(white, 0);
+      .menu__subnav {
+        display: block;
+      }
+    }
+    .menu__subnav {
+      display: none;
+      margin: 0;
+      background-color: get-color(white, 0);
+      position: absolute;
+      padding: 0;
+      top: 85px;
+      left: 0;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      box-shadow: .5px .5px 1px #000;
+      .menu__item {
+        padding: .25rem 1rem;
+        white-space: nowrap;
+        font-size: $font-size-sm;
+        width: 100%;
+        .menu__link {
+          color: get-color(black, 2);
+        } 
+        &:hover {
+          background-color: get-color(grey, 0);
+        }
+      }
+    }
+  }
+  .menu__item--has-children {
+    display: flex;
+    flex-direction: row;
+    &:after {
+      content: '';
+      height: 0;
+      width: 0;
+      margin: auto 0 auto 7px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid get-color(grey, 0);
+    }
+  }
+}

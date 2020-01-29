@@ -1,0 +1,6 @@
+item:
+  theme: 'theme--dark'
+  custom_classes: ''
+  input_title: 'Form Input'
+  input_placeholder: 'this is a placeholder'
+  input_id: inputid

@@ -1,0 +1,26 @@
+item: 
+  size: 'split--fifty'
+  constrain: true
+  large_side: 0
+  left_side: 
+    type: 'text-button-image'
+    left_theme: 
+      theme: 'theme--dark'
+    text_button_image:
+      tbi_title: 'This is a test stitle for TBI'
+      tbi_content: '<h2>This is the content h3</h2>
+                <p>this is a paragraph</p>
+                <p>this is a list</p>
+                <ul>
+                  <li>one</li>
+                  <li>two</li>
+                  <li>three</li>
+                </ul>'
+  right_side: 
+    type: 'full-width-image'
+    right_theme: 
+      theme: 'theme--unset'
+    image:
+      fwi_custom_classes: ''
+      fwi_constrain: false
+      fwi_image: 'https://placeimg.com/640/480/any'

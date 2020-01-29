@@ -1,0 +1,10 @@
+.facts-grid {
+    padding: rem(59px) 0;
+    &__title {
+        text-align: center;
+        padding-bottom: rem(15px);
+    }
+    .l-grid--4col {
+        grid-gap: 0;
+    }
+}

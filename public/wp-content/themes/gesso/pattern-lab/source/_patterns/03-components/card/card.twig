@@ -1,0 +1,42 @@
+{% set card_link, card_title, card_content, card_theme, card_image, card_quote_attr, card_video, card_preheader, card_bg_image, card_button_style = item.card.link, item.card.title, item.card.content, item.card.theme, item.card.image, item.card.quote_attribution, item.card.video_url, item.card.preheader, item.card.bg_image, item.card.button_style %}
+<!-- Provided by /03-components/card/card.twig  -->
+<{{ is_linked ? 'a' : 'div' }} {{ is_linked ? "href=\"#{card_link.url}\""|raw }} class="card{{ item.card.type ? " card--#{item.card.type}" : " card--#{card_type}"}} {{ card_theme ? : ''}} {{ is_hoverable ? "is-hoverable"}}" {{ card_bg_image ? "style=\"background-image:url(#{card_bg_image});\""|raw }}>
+    {% block header %}
+      {% if card_preheader %}
+        <h6 class="card__preheader">
+          {{ card_preheader }}
+        </h6>
+      {% endif %}
+
+      {% if card_title %}
+        <h3 class="card__title">
+            {{ card_title }}
+        </h3>
+      {% endif %}
+    {% endblock %}
+
+    {% if card_image %}
+      <div class="card__image">
+        <img src="{{ card_image }}" alt="Image of {{ card_title }}" data-lity>
+      </div>
+    {% endif %}
+
+    {% if card_content %}
+      <div class="card__content">
+          {{ card_content|raw }}
+      </div>
+    {% endif %}
+
+    {% if is_linked and use_button %}
+        <a class="button card__button {{ card_button_style ? "button--#{item.card.button_style}" }}" href="{{ card_button_url }}">{{ card_button_title }}</a>
+      {% elseif use_button %}
+        <div class="button card__button {{ card_button_style ? "button--#{item.card.button_style}" }}">{{ card_button_title }}</div>
+      {% elseif show_link_in_card %}
+        <a class="card__link {{ card_button_style ? "button--#{item.card.button_style}" }}" href="{{ card_link.url }}">{{ card_link.title }}</a>
+      {% elseif is_linked and show_link_in_card %}
+        <div class="card__link {{ card_button_style ? "button--#{item.card.button_style}" }}">{{ card_link.title }}</div>
+      {% else %}
+
+    {% endif %}
+
+</{{ is_linked ? 'a' : 'div' }}>

@@ -1,0 +1,25 @@
+<div class="page-builder">
+  {% if post.get_field('components') %}
+    {% for item in post.get_field('components') %}
+
+        {% if item.acf_fc_layout == 'offset_text_hero' %}
+          <!-- conditionals for assigning vars for offset text hero component -->
+          <!-- OFFSET TEXT HERO -->
+              {% set oth_title, oth_image, oth_media = item.oth_title, TimberImage(item.oth_image).src, item.hero_oth_media %}
+          <!-- end conditional -->
+        {% endif %}
+
+
+        {% if item.acf_fc_layout == 'grid' %}
+          <!-- conditionals for assigning vars for grid component -->
+          <!--  GRID  -->
+              {% set grid_title, grid_size, grid_cards, grid_link, custom_classes = item.grid_title, item.grid_size, item.grid_cards, item.grid_link, item.custom_classes %}
+          <!-- end conditional -->
+        {% endif %}
+
+
+      <!-- page builder component -->
+      {% include '@components/' ~ item.acf_fc_layout|replace({'_': '-'}) ~ '/' ~ item.acf_fc_layout|replace({'_': '-'}) ~ '.twig' %}
+    {% endfor %}
+  {% endif %}
+</div>

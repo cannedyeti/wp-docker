@@ -1,0 +1,10 @@
+title: 'Facts grid example'
+fact_list: 
+  - title: 'This is an example card title'
+    subtitle: 'this is an example subtitle'
+  - title: 'This is another title'
+    subtitle: "another subtitle"
+  - title: 'This is fact 3'
+    subtitle: 'this is an example subtitle'
+  - title: 'This is fact 4'
+    subtitle: "another subtitle"

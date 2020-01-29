@@ -1,0 +1,15 @@
+---
+card_bg_image: 'https://picsum.photos/600/600?image=1076'
+card_image: 'https://picsum.photos/200?image=1027'
+card_title: "Card Title"
+card_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et accumsan augue. Morbi non laoreet lorem."
+card_link:
+  title: 'Click Link'
+  url: '#'
+card_type: 'square'
+is_hoverable: FALSE
+is_linked: TRUE
+use_button: TRUE
+show_link_in_card: TRUE
+card_button_title: 'Learn more'
+card_button_url: 'www.google.com'

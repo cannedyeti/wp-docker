@@ -1,0 +1,12 @@
+.gfield_checkbox li, .gfield_radio li {
+    display: flex;
+    align-items: baseline;
+}
+
+.gform_wrapper ul.gfield_checkbox li label, .gform_wrapper ul.gfield_radio li label {
+    padding-left: 5px;
+}
+
+.gform_body br{
+    display: none !important;
+}

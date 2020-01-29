@@ -1,0 +1,22 @@
+// @file
+//Icon Helpers
+
+@mixin icon-helper($image, $height, $width, $color: $color-text-primary, $align: left) {
+  display: inline-block;
+  vertical-align: middle;
+    &:before {
+      // background-image: url('../images/bg/#{$image}.png');
+      background-color: $color;
+      // background-image: linear-gradient(transparent, transparent), url('../images/bg/#{$image}.svg');
+      background-repeat: no-repeat;
+      content: "";
+      float: $align;
+      height: $height;
+      margin: 0 7px;
+      -webkit-mask-image: url('../images/bg/#{$image}.svg');
+      mask-image: url('../images/bg/#{$image}.svg');
+      position: relative;
+      overflow: hidden;
+      width: $width;
+    }
+}

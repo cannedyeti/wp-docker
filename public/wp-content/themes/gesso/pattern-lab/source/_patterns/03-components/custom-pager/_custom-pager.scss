@@ -1,0 +1,36 @@
+.custom-pager {
+    text-align: center;
+    &__title {
+
+    }
+    &__description {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    &__well {
+        max-width: 400px;
+        min-height: 20px;
+        padding: 19px;
+        margin-bottom: 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        margin: 0 auto;
+    }
+    &__button {
+        background-color: $prr-navy;
+        color: #fff !important;
+        padding: 9px 20px !important;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.3333333;
+        text-decoration: none;
+        &:first-of-type {
+            margin-bottom: .5rem;
+        }
+    }
+}

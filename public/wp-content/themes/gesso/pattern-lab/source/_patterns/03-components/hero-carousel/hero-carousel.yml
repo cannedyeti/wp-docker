@@ -1,0 +1,10 @@
+---
+item: 
+  custom_classes: 
+  slide: 
+    - background_image: 'https://placeimg.com/640/480/any'
+      title: "This is a test title"
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+    - background_image: 'https://placeimg.com/640/420/any'
+      title: "This is a test title two"
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "

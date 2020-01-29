@@ -1,0 +1,14 @@
+.card.card--fact {
+    max-width: 100%;
+    text-align: left;
+    @media(min-width: $bp-hide-mobile-menu) {
+        border-bottom: none;
+    }
+    &:last-of-type {
+        border: none;
+    }
+    .card__title {
+    }
+    .card__content {
+    }
+}

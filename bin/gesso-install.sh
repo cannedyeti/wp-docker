@@ -1,12 +1,13 @@
 #!/bin/bash
 
+# sh bin/gesso-install.sh
 # Install Gesso
 if [ -d "public/wp-content/themes/gesso" ];
 then
 	echo "Gesso is installed"
 else
 	echo "Gesso is not found. Installing..."
-  git clone https://github.com/windycitymoon/gesso-wp ./public/wp-content/themes/gesso
+  git clone https://cpotebnya@bitbucket.org/cpotebnya/component-library.git ./public/wp-content/themes/gesso
   cd ./public/wp-content/themes/gesso
   rm -rf .git &&
   npm install &&
@@ -19,7 +20,7 @@ then
   echo "Timber Library is installed"
 else
   echo "Timber Library is not found. Installing..."
-  docker-compose run wpcli plugin install timber-library &&
+  docker-compose run wpcli plugin install timber-library --version=1.9.4 &&
   docker-compose run wpcli plugin activate timber-library &&
   docker-compose run wpcli theme activate gesso
 fi

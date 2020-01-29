@@ -1,0 +1,140 @@
+$component-width: 100%;
+$component-height: 400px; // Should remove so that Div height is determined by contents of tallest div
+$min-bg-image-height: 400px;
+.split {
+  display: grid;
+
+  &.split--fifty {
+    @include split-size(0.5, 0.5);
+  }
+
+  &.split--sixty {
+    @include split-size(0.6, 0.4);
+
+    &.split--reverse {
+      @include split-size(0.4, 0.6);
+    }
+  }
+
+  &.split--seventy {
+    @include split-size(0.7, 0.3);
+
+    &.split--reverse {
+      @include split-size(0.3, 0.7);
+    }
+  }
+
+  .has-bg-image {
+    min-height: $min-bg-image-height;
+  }
+
+  // IS CONSTRAINED THEME
+  &.is-constrained {
+    grid-template-areas: "A" "B" "C" "D";
+    // grid-auto-rows: min-content;
+    @media (min-width: $bp-hide-mobile-menu) {
+      display: grid;
+      grid-template-areas: "A B C D";
+
+      .split__zone--1 {
+        grid-area: A;
+      }
+
+      .split__zone--2 {
+        grid-area: B;
+      }
+
+      .split__zone--3 {
+        grid-area: C;
+      }
+
+      .split__zone--4 {
+        grid-area: D;
+      }
+    }
+  }
+  // IS FULL THEME
+  &.is-full {
+    grid-template-areas: "A" "B" "C" "D";
+    // grid-auto-rows: min-content;
+    @media (min-width: $bp-hide-mobile-menu) {
+      grid-template-areas: ". B C .";
+
+      .split__zone--1 {
+        grid-area: A;
+      }
+
+      .split__zone--2 {
+        grid-area: B;
+      }
+
+      .split__zone--3 {
+        grid-area: C;
+      }
+
+      .split__zone--4 {
+        grid-area: D;
+      }
+
+      &.has-image--right {
+        grid-template-areas: "A B C C";
+
+        .split__zone--1 {
+          grid-area: A;
+        }
+
+        .split__zone--2 {
+          grid-area: B;
+        }
+
+        .split__zone--3 {
+          grid-area: C;
+        }
+
+        .split__zone--4 {
+          grid-area: C;
+        }
+      }
+
+      &.has-image--left {
+        grid-template-areas: "A A C D";
+
+        .split__zone--1 {
+          grid-area: A;
+        }
+
+        .split__zone--2 {
+          grid-area: A;
+        }
+
+        .split__zone--3 {
+          grid-area: C;
+        }
+
+        .split__zone--4 {
+          grid-area: D;
+        }
+      }
+
+      &.has-image--left.has-image--right {
+        grid-template-areas: "A A B B";
+
+        .split__zone--1 {
+          grid-area: A;
+        }
+
+        .split__zone--2 {
+          grid-area: A;
+        }
+
+        .split__zone--3 {
+          grid-area: B;
+        }
+
+        .split__zone--4 {
+          grid-area: B;
+        }
+      }
+    }
+  }
+}

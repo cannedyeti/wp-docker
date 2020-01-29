@@ -1,0 +1,8 @@
+{# section-header #}
+<!-- Provided by /03-components/section-header/section-header.twig -->
+<div id="{{ item.section_header_custom_id }}" class="section-header {{ item.custom_classes }} {{ item.section_header_theme ? section_header_theme : ''}} {{ item.section_header_align ? item.section_header_align : ''}}">
+  {{ item.section_header_constrain ? '<div class="l-constrain">' : ''}}
+    <div class="section-header__slug {{ item.section_header_menu_enable ? 'is-active' : '' }}" style="visibility: hidden;">{{ item.section_header_menu_slug }}</div>
+    <h2 class="section-header__title">{{ item.section_header_title }}</h2>
+  {{ item.section_header_constrain ? '</div>' : ''}}
+</div>

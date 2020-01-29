@@ -1,0 +1,22 @@
+item:
+  content_repeater:
+    one: 
+      title: 'This is anexample title'
+      content: '<h3>This is the content h3</h3>
+                <p>this is a paragraph</p>
+                <p>this is a list</p>
+                <ul>
+                  <li>one</li>
+                  <li>two</li>
+                  <li>three</li>
+                </ul>'
+      two: 
+        title: 'This is a second header'
+        content: '<h2>This is the content h3</h2>
+                  <p>this is a paragraph</p>
+                  <p>this is a list</p>
+                  <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                  </ul>'

@@ -1,0 +1,14 @@
+<!-- Provided by /03-components/wysiwyg-editor/wysiwyg-editor.twig  -->
+<div class="wysiwyg {{ item.theme ? item.theme : '' }} {{ item.wysiwyg_custom_classes ? item.wysiwyg_custom_classes : '' }}">
+
+  {{ item.wysiwyg_constrain ? '<div class="l-constrain">':'' }}
+      {% if item.wysiwyg_title %}
+        <h2 class="wysiwyg__title">{{ item.wysiwyg_title }}</h2>
+      {% endif %}
+
+      {% if item.wysiwyg_editor %}
+        <div class="wysiwyg__editor">{{ item.wysiwyg_editor|raw }}</div>
+      {% endif %}
+
+  {{ item.wysiwyg_constrain ? '</div>':'' }}
+</div>

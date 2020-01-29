@@ -1,0 +1,16 @@
+<!-- Provided by templates/footer.twig -->
+{% embed '@layouts/regions/footer/footer.twig' %}
+	{% block content %}
+		<div class="l-constrain">
+			{{ function('get_sidebar', 'footer') }}
+			{% include '@components/copyright/copyright.twig' with
+			{
+					year: {
+						long: current_year
+					},
+					site_name: site.name
+				}
+			%}
+		</div>
+	{% endblock %}
+{% endembed %}

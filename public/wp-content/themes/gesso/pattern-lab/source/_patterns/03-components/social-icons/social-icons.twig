@@ -1,0 +1,7 @@
+<!-- Provided by /03-components/social-icons/social-icons.twig  -->
+<div class="social-icons">
+    <span>{{ options.global_footer_social.title }}</span>
+    {% for icon in options.global_footer_social.links %}
+        <a href="{{ icon.social_url }}"><i class="fa fa-{{ icon.social_network }}"></i></a>
+    {% endfor %}
+</div>

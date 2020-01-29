@@ -1,0 +1,28 @@
+---
+item:
+  file_block_title: "Related Content"
+  file_block_constrain: TRUE
+  file_block_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet."
+  files:
+    join():
+      - include():
+          pattern: components-file
+          with:
+            name: 'Document attachment report that the boss wants'
+            size: '10KB'
+      - include():
+          pattern: components-file
+      - include():
+          pattern: components-file
+          with:
+            name: 'Raining in Seattle? Is it Real'
+            size: '1MB'
+      - include():
+          pattern: components-file
+          with:
+            name: 'The music some folks listen to makes me wonder?'
+      - include():
+          pattern: components-file
+          with:
+            name: 'Seatac Airport Master Plan?'
+            size: '117KB'

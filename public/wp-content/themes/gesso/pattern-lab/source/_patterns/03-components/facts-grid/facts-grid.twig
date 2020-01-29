@@ -1,0 +1,22 @@
+<!-- Provided by /03-components/facts-grid/facts-grid.twig  -->
+<div class="facts-grid {{ custom_classes }}">
+    <div class="l-constrain">
+        {% if title %}
+            <h2 class="facts-grid__title">
+                {{ title }}
+            </h2>
+        {% endif %}
+        {% if fact_list %}
+            <div class="facts-grid__container">
+                <div class="l-grid l-grid--4col">
+                    {% for fact in fact_list %}
+                        {% include '@components/card/card--fact/card--fact.twig' with {
+                            title: fact.title,
+                            content: fact.subtitle
+                        } %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>

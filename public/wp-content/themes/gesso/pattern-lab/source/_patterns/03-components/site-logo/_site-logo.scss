@@ -1,0 +1,11 @@
+// @file
+// Styles for Site logo.
+
+.site-logo {
+    display: flex;
+    .site-logo__image {
+        margin: auto 0;
+        height: 68px;
+    }
+    padding-right: 2rem;
+}

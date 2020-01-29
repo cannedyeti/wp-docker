@@ -1,0 +1,8 @@
+<div class="input-field {{item.custom_classes}} {{ item.theme }}">
+    <div class="l-constrain">
+        <div class="input-field__title">
+            {{ item.input_title }}
+        </div>
+        <textarea placeholder="{{ item.input_placeholder }}" data-id="{{ item.input_id|replace({' ': '', ')': '', '(': ''})|lower }}" row="20" cols="50" class="form-input-to-save"></textarea>
+    </div>
+</div>

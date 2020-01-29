@@ -1,0 +1,33 @@
+.accordion {
+    &__title {
+        padding: 2rem 0;
+    }
+    &__question {
+        margin-bottom: 4px;
+        display: block;
+        background-repeat: no-repeat;
+    }
+    &__answer {
+
+    }
+    &__entry {
+      @include icon-helper(plus, 20px, 20px, $prr-navy, right);
+      display: block;
+        padding-bottom: 1rem;
+        &:not(.hidden) {
+            &:last-of-type{
+                padding-bottom: 0;
+            }
+        }
+        &.active {
+          @include icon-helper(minus, 20px, 20px, $prr-navy, right);
+          display: block;
+        }
+    }
+    &__tabs {
+        padding-bottom: 2rem;
+    }
+    &__show-all.button {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,16 @@
+item:
+  dropdown:
+    dropdown_label: "Title"
+    dropdown_button: "Dropdown Button"
+    dropdown_menu:
+      a:
+        link:
+          title: 'Dropdown menu item'
+          url: 'test.com'
+          target: '_blank'
+      b:
+        link:
+          title: 'Something very important to share'
+          url: 'test.com'
+          target: '_blank'
+    custom_classes: ""

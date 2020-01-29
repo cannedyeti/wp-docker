@@ -1,0 +1,9 @@
+offsetHero_image: 'https://placeimg.com/680/420/any'
+offsetHero_title: 'This is a title'
+offsetHero_content: |-
+  <h2>Don't underestimate the Force</h2>
+  <ul>
+    <li>Remember, a Jedi can feel the Force flowing through him.</li>
+    <li>The plans you refer to will soon be back in our hands.</li>
+    <li>He is here.</li>
+  </ul>

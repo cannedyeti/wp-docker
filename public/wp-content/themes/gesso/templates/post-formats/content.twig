@@ -1,0 +1,24 @@
+<!-- Provided by templates/post-formats/content.twig -->
+{% embed "@components/article/article.twig" %}
+  {% block title %}
+    {% include "@components/page-title/page-title.twig" with
+      {
+        page_title: post.title
+      }
+    %}
+  {% endblock %}
+  {% block footer %}
+    {% include "@components/author/author.twig" with
+      {
+        url: post.author.link,
+        author: post.author.display_name
+      }
+    %}
+  {% endblock %}
+  {% block main %}
+    {{ post.content }}
+  {% endblock %}
+  {% block comments %}
+    {% include 'components/comments.twig' %}
+  {% endblock %}
+{% endembed %}

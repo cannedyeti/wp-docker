@@ -1,0 +1,15 @@
+.icon {
+  
+}
+
+.icon--text {
+  @include icon-helper(file-text2, 32px, 32px);
+}
+
+.icon--link {
+  @include icon-helper(link, 32px, 32px);
+}
+
+.icon--image {
+  @include icon-helper(file-picture, 32px, 32px);
+}

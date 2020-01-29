@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "fifty-fifty.css",
+	"sources": [
+		"../../../../pattern-lab/source/_patterns/02-layouts/fifty-fifty/fifty-fifty.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

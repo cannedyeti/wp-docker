@@ -1,0 +1,17 @@
+//@file
+// Transparent Image overlay (Gradient)
+@mixin gradient-overlay($hexcolor: #000000, $alpha: .8) {
+    &:before { // CSS Color Overlay
+    /* Add a Gradient */
+    background: linear-gradient(to bottom, transparent, rgba( $hexcolor, $alpha));
+    background-size: cover;
+    content: " ";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}

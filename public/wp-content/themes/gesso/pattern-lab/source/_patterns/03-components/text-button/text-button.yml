@@ -1,0 +1,15 @@
+item:
+  text_button_image:
+    tbi_title: "TBI title"
+    tbi_use_image: false
+    tbi_image: 'https://placeimg.com/640/480/any'
+    tbi_content: |-
+      <h1>Content for tbi</h1>
+      <p>This will be a wysiwyg field so we can add whatever we want.</p>
+    tbi_use_button: true
+    tbi_button:
+      button:
+        url: www.google.com
+        title: "button title"
+        target: "_blank"
+    constrain: true

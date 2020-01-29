@@ -1,0 +1,19 @@
+.header--main {
+    display: none;
+    @media(min-width: $bp-hide-mobile-menu) {
+        display: block;
+    }
+    a {
+        text-decoration: none;
+    }
+    .header-content--main {
+        display: flex;
+        flex-direction: row;
+    }
+    .header__nav {
+        .l-navigation, .l-constrain {
+            height: 100%;
+        }
+
+    }
+}

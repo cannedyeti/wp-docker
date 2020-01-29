@@ -1,0 +1,103 @@
+{
+    "key": "group_5d82d677e3263",
+    "title": "COMP - Dynamic Menu",
+    "fields": [
+        {
+            "key": "field_5d82df30cc843",
+            "label": "How to use this component",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The Dynamic Menu Component generates a menu based on the Section Header Components that appear on this page builder page. It is ideally used on pages with tons of content, or to create a single-page website. \r\n\r\n<h3>NOTE:<\/h3>\r\n<ul>\r\n<li>This component should not be used to create a menu for your website, it only generates a menu for a Page Builder pages<\/li>\r\n<li>You should only use one of these components per page builder page.<\/li>\r\n<\/ul>",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5d82db7abccda",
+            "label": "Logo",
+            "name": "dynamic_menu_logo",
+            "type": "image",
+            "instructions": "Insert a logo before the menu",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": 200,
+            "max_size": "1MB",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d82d680589a1",
+            "label": "Layout Constrain",
+            "name": "dynamic_menu_constrain",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Constrain the width of the menu",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5d82e0d31c3e3",
+            "label": "Custom Classes",
+            "name": "dynamic_menu_custom_classes",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "acf_placeholder"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1570150152
+}

@@ -1,0 +1,24 @@
+<!-- these vars must be in this format (rather than using a with statement) for it to work with 60/40 50/50 and on it's own -->
+<!-- Provided by /03-components/text-button/text-button.twig  -->
+
+<div class="text-button {{ item.text_button.tbi_use_image ? 'text-button--image' : ''}} {{ item.text_button.tbi_custom_classes }} {{ subcomponent ?  : ''}} {{ split_theme ? : ''}} {{ item.text_button.constrain ? 'is-constrained' : ''}}" {% if item.text_button.tbi_use_image %} style="background-image: url({{ item.text_button.tbi_image }}) {% endif %}">
+    {{ item.text_button.constrain  ? '<div class="l-constrain">':'' }}
+    <div class="text-button__container">
+        {% if item.text_button.tbi_title %}
+            <h2 class="text-button__title">
+                {{ item.text_button.tbi_title }}
+            </h2>
+        {% endif %}
+        {% if item.text_button.tbi_content %}
+            <div class="text-button__content">
+                {{ item.text_button.tbi_content|raw }}
+            </div>
+        {% endif %}
+        {% if item.text_button.tbi_use_button %}
+            <a href="{{ item.text_button.tbi_button.button.url }}" target="{{ item.text_button.tbi_button.button.target }}" class="button text-button__button button--{{ item.text_button.tbi_button.button_style }}">
+                {{ item.text_button.tbi_button.button.title }}
+            </a>
+        {% endif %}
+    </div>
+    {{ item.text_button.constrain  ? '</div>':'' }}
+</div>

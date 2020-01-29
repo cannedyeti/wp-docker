@@ -1,0 +1,19 @@
+<!-- Provided by /03-components/content-repeater/content-repeater.twig  -->
+<div class="content-repeater">
+    <div class="l-constrain">
+        {% for section in item.content_repeater %}
+            <div class="content-repeater__container">
+                {% if  section.title %}
+                    <h3 class="content-repeater__title">
+                        {{ section.title }}
+                    </h3>
+                {% endif %}
+                {% if section.content %}
+                    <div class="content-repeater__content">
+                        {{ section.content|raw }}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

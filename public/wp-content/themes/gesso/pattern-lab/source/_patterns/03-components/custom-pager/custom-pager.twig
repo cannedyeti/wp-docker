@@ -1,0 +1,33 @@
+<!-- Provided by /03-components/custom-pager/custom-pager.twig -->
+<div class="custom-pager {{ item.custom_classes ? item.custom_classes : '' }}">
+
+  {% if item.pager_title %}
+    <h2 class="custom-pager__title">
+      {{ item.pager_title }}
+    </h2>
+  {% endif %}
+
+  {% if item.pager_description %}
+    <p class="custom-pager__description">
+      {{ item.pager_description }}
+    </p>
+  {% endif %}
+
+  <div class="custom-pager__well">
+    {% if item.pager_previous.url %}
+      <div>
+        <a href="{{ item.pager_previous.url }}" class="custom-pager__button custom-pager__button--prev">
+          {{ item.pager_previous.title }}
+        </a>
+      </div>
+
+    {% endif %}
+    {% if item.pager_next.url %}
+      <div>
+        <a href="{{ item.pager_next.url }}" class="custom-pager__button custom-pager__button--next">
+          {{ item.pager_next.title }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>

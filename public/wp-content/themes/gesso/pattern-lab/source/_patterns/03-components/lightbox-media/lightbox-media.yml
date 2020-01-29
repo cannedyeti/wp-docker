@@ -1,0 +1,8 @@
+item: 
+  theme: 'theme--dark'
+  layout_constrain: true
+  lightbox_media_select: 'image'
+  lightbox_media_image:
+    url: 'https://placeimg.com/640/480/any'
+    link: 'https://placeimg.com/640/480/any'
+  lightbox_media_caption: 'This is an example image. Click it to open lightbox.'

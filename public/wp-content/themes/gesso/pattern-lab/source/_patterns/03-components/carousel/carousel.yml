@@ -1,0 +1,28 @@
+item:
+  custom_classes: "custom"
+  carousel:
+    carousel_title: "Carousel title"
+    carousel_constrain: true
+    carousel_description: 'Example description'
+    carousel_default_card_amount: 3
+    carousel_cards:
+      one:
+        card:
+          title: 'one'
+          type: 'square'
+      two:
+        card:
+          title: 'two'
+          type: 'square'
+      three:
+        card:
+          title: 'three'
+          type: 'square'
+      four:
+        card:
+          title: 'four'
+          type: 'square'
+      five:
+        card:
+          title: 'the 5th one'
+          type: 'circle'

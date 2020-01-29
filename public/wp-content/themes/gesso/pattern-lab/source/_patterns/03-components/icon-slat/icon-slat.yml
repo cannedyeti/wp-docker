@@ -1,0 +1,7 @@
+icon: 'https://placeimg.com/640/480/any'
+title: 'This is a title example'
+description: 'This is an example of an icon slat description'
+link: 
+  url: 'www.google.com'
+  title: 'Google'
+  target: ''

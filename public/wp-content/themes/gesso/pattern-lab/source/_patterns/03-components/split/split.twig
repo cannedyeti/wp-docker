@@ -1,0 +1,24 @@
+<!-- Provided by /03-components/split/split.twig  -->
+<div id="{{ item.custom_id }}" class="split {{ item.split_large_side == 0 ? '' : 'split--reverse' }} {{ item.split_left_side.use_background_image ? 'has-image--left' : ''  }} {{ item.split_right_side.use_background_image ? 'has-image--right' : ''  }} {{ item.split_size }} {{ item.constrain ? 'is-constrained' : 'is-full'}} {{ item.split_theme.theme }}" style="padding: {{ item.padding.top_padding ~ 'px ' }} {{ item.padding.right_padding ~ 'px ' }} {{ item.padding.bottom_padding ~ 'px ' }} {{ item.padding.left_padding ~ 'px;' }}">
+  <div class="split__zone split__zone--1 {{ not item.constrain and item.split_left_side.left_theme.theme ? item.split_left_side.left_theme.theme : '' }}"></div>
+  {% include '@components/split-zone/split-zone.twig' with {
+    zone_modifier: '2',
+    theme: item.split_left_side.left_theme.theme,
+    use_background_image: item.split_left_side.use_background_image,
+    background_image: item.split_left_side.background_image.url,
+    type: item.split_left_side.type,
+    item: item.split_left_side
+  } %}
+  {% include '@components/split-zone/split-zone.twig' with {
+    zone_modifier: '3',
+    theme: item.split_right_side.right_theme.theme,
+    use_background_image: item.split_right_side.use_background_image,
+    background_image: item.split_right_side.background_image.url,
+    type: item.split_right_side.type,
+    item: item.split_right_side
+  } %}
+  <div class="split__zone split__zone--4 {{ not item.constrain and item.split_right_side.right_theme.theme ? item.split_right_side.right_theme.theme : '' }}"></div>
+</div>
+
+
+<!-- Look at https://codepen.io/windycitymoon/pen/qBBQBJM -->

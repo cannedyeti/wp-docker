@@ -1,0 +1,22 @@
+//@file
+// Split Size
+@mixin split-size($left, $right, $min-height: 200px) {
+    $left-side: $left;
+    $right-side: $right;
+    $left-side-perc: percentage($left-side);
+    $right-side-perc: percentage($right-side);
+    $left-side-calc-full: $max-page-width * $left-side;
+    $right-side-calc-full: $max-page-width * $right-side;
+    $left-side-calc-min: 100% * $left-side;
+    $right-side-calc-min: 100% * $right-side;
+
+
+    @media (min-width: $bp-hide-mobile-menu ) {
+      display: grid;
+      grid-template-columns: 1fr #{$left-side-perc} #{$right-side-perc} 1fr;
+    }
+    @media (min-width: 1200px ) {
+        display: grid;
+        grid-template-columns: 1fr #{$left-side-calc-full} #{$right-side-calc-full} 1fr;
+    }
+}

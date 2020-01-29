@@ -1,0 +1,12 @@
+{# dynamic-menu #}
+<!-- Provided by /03-components/dynamic-menu/dynamic-menu.twig -->
+<div class="dynamic-menu {{ item.dynamic_menu_custom_classes ? item.dynamic_menu_custom_classes : ''}}">
+  {{ item.dynamic_menu_constrain ? '<div class="l-constrain">' : ''}}
+    <div class="dynamic-menu__inner">
+      {% if item.dynamic_menu_logo %}
+        <img class="dynamic-menu__logo" src="{{ item.dynamic_menu_logo.url }}" alt="{{ item.dynamic_menu_logo.alt }}">
+      {% endif %}
+      <div class="dynamic-menu__builder"></div>
+    </div>
+  {{ item.dynamic_menu_constrain ? '</div>' : ''}}
+</div>
