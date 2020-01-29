@@ -1,7 +1,0 @@
-<!-- Provided by /03-components/comment-summary/comment-summary.twig  -->
-<div class="comment-summary">
-  {% if comments %}
-    <span>Comments: {% if comments == 'random_number' %}{{ random(100) }}{% else %}{{ comments }}{% endif %}</span>
-  {% endif %}
-  <a href="{{ url }}#respond">Leave a comment</a>
-</div>

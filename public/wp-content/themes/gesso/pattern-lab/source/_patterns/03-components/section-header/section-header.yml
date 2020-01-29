@@ -1,8 +1,0 @@
-item:
-  section_header_align: 'align--left'
-  section_header_theme: 'theme--light'
-  section_header_title: 'Page Builder Section Header'
-  section_header_menu_enable: TRUE
-  section_header_constrain: TRUE
-  section_header_custom_id: 'test-id'
-  custom_classes: 'test-classes'

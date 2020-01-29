@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "svg-mask-image.css",
-	"sources": [
-		"../../../../pattern-lab/source/_patterns/00-global/01-tools/svg-mask-image.scss"
-	],
-	"names": [],
-	"mappings": ""
-}

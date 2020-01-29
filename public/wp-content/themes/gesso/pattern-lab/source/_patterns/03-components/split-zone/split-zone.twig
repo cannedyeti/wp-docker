@@ -1,8 +1,0 @@
-<div class="split__zone split__zone--{{ zone_modifier }} {{ theme ? : '' }} {{ use_background_image ? 'has-bg-image': ''}}" {% if use_background_image %}style="background-image:url('{{ background_image }}')"{% endif %}>
-    {% if type %}
-        {% include '@components/' ~ type ~ '/'  ~ type ~ '.twig' with {
-            item: item,
-            subcomponent: 'subcomponent'
-        } %}
-    {% endif %}
-</div>

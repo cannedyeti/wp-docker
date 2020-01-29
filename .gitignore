@@ -17,7 +17,7 @@
 # use `git update-index --assume-unchanged`.
 #
 # To stop tracking a file that is currently tracked,
-# use `git rm --cached`
+# use `git rm -r --cached .`
 #
 # ----------------------------------------------
 
@@ -31,8 +31,8 @@ public/wp-config.php
 # ignore these plugins
 public/wp-content/plugins/hello.php
 
-# ignore WP specific themes
-public/wp-content/themes/twenty*/
+# ignore all themes
+public/wp-content/themes/
 
 # ignore node/grunt dependency directories
 node_modules/

@@ -1,4 +1,0 @@
----
-el: .headline
-title: headline
----
